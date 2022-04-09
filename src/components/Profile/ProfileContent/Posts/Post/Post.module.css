@@ -1,0 +1,25 @@
+.post {
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgb(0 0 0 / 10%);
+    background: #fff;
+    padding: 20px;
+  }
+
+
+.post_author {
+  display: flex;
+  gap: 20px;
+}
+
+.post_author img {
+  width: 50px;
+  border-radius: 50px;
+}
+
+.likes {
+  padding-left: 25px;
+  background: url(./../img/like.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+

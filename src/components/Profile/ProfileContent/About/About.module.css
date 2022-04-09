@@ -1,0 +1,57 @@
+.about {
+    grid-area: a;
+    height: max-content;
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgb(0 0 0 / 10%);
+    background: #fff;
+    padding: 20px;
+  }
+
+  .about_info {
+    border-bottom: 1px solid #999;
+  }
+  
+  .title {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .text {
+    opacity: 0.33;
+  }
+
+.profile_info {
+  margin: 16px 0 6px;
+  display: grid;
+  gap: 15px;
+}
+
+.profile_info div {
+  padding-left: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.profile_info p {
+  margin: 0;
+}
+
+.profile_info_item {
+  font-size: 14px;
+  opacity: 0.33;
+}
+
+.private {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/747/747305.png);
+}
+
+.visible {
+  background-image: url(https://cdn-icons.flaticon.com/png/512/3395/premium/3395544.png?token=exp=1648043637~hmac=dd676ebf206666bb0148ca84f7e7ba61);
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  background-image: url(https://cdn-icons-png.flaticon.com/512/927/927667.png);
+}

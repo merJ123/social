@@ -1,0 +1,33 @@
+.profile_content {
+    margin-top: 20px;
+    display: grid;
+    grid-template-areas: "p a";
+    grid-template-columns: 1fr 30%;
+    gap: 20px;
+  }
+  
+  .about, .post {
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgb(0 0 0 / 10%);
+    background: #fff;
+    padding: 20px;
+  }
+  
+  .about {
+    grid-area: a;
+    height: max-content;
+  }
+  
+  
+  .about_info {
+    border-bottom: 1px solid #999;
+  }
+  
+  .title {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .text {
+    opacity: 0.33;
+  }

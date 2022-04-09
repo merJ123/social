@@ -1,0 +1,84 @@
+.nav {
+  margin-top: 80px;
+  grid-area: n;
+  background-color: #fff;
+  height: max-content;
+  font-size: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: grid;
+  gap: 5px;
+}
+
+.inactive{
+  text-decoration: none;
+  color: #000;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+
+
+.inactive:hover {
+  background: #e0e0e0;
+}
+
+.item {
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+
+.active {
+  border-radius: 10px;
+  color: #06B0CA;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.item_profile {
+  background-image: url(./img/profile.svg);
+}
+.item_message {
+  background-image: url(./img/message.svg);
+}
+.item_music {
+  background-image: url(./img/music.svg);
+}
+.item_news {
+  background-image: url(./img/news.svg);
+}
+.item_settings {
+  background-image: url(./img/settings.svg);
+}
+.item_friends {
+  background-image: url(./img/friends.svg);
+}
+
+.friends {
+  margin-top: 20px;
+  display: grid;
+}
+
+.friends_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.user img {
+  width: 70px;
+  border-radius: 50px;
+  border: 3px solid #06b0ca65;
+  z-index: 1;
+}

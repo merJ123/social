@@ -1,0 +1,51 @@
+
+.posts {
+  grid-area: p;
+  display: grid;
+  gap: 15px;
+}
+
+.addPost {
+  display: grid;
+  gap: 10px;
+}
+
+.addPostButton {
+  padding: 10px 10px 10px 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: max-content;
+  font-size: 16px;
+  background: url(./img/create.svg);
+  background-repeat: no-repeat;
+  background-position: 4px;
+}
+
+.addPost textarea {
+  border-radius: 15px;
+  height: 85px;
+  padding: 15px 10px 10px 55px;
+  font-size: 14px;
+  border: .5px solid #ABABAB;
+  line-height: 1.5;
+  resize: none;
+  outline: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;;
+}
+
+.addPost_ava {
+  position: absolute;
+  padding: 57px 8px;
+}
+
+.addPost_ava img {
+  height: 35px;
+  border-radius: 50px;
+}
+
+.postsColumn {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+}

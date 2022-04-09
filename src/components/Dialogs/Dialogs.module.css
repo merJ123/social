@@ -1,0 +1,88 @@
+.dialogs {
+    margin-top: 80px;
+    display: grid;
+    grid-template-areas: "m d";
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+
+.dialogs_container{
+    background: #fff;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.active {
+    background: rgba(6, 176, 202, .2);
+    border-left: 1px solid #06B0CA;
+}
+
+.dialog a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+}
+
+.dialogs_item {
+    grid-area: d;
+    height: fit-content;
+}
+
+.dialog a:hover {
+    background: rgba(6, 176, 202, .1);
+}
+
+.messages {
+    grid-area: m;
+    height: 80vh;
+    display: grid;
+    grid-template-rows: 1fr 7%;
+    gap: 15px;
+}
+
+.sendMessage {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sendMessage a {
+    display: block;
+}
+
+.sendMessage textarea {
+    border-radius: 15px;
+    font-size: 14px;
+    border: .5px solid #ABABAB;
+    resize: none;
+    outline: none;
+    padding: 10px;
+    height: 17px;
+    width: 96%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.sendButton {
+    width: 30px;
+    height: 30px;
+    background: url(./img/send.svg);
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.messageItems {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    padding: 20px;
+    color: #fff;
+    background-color: #65ddf0;
+    border-radius: 20px 20px 20px 10px;
+    width: max-content;
+}
