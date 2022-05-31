@@ -3,7 +3,6 @@ import FriendsList from "./FriendsList/FriendsList";
 import s from "./Navbar.module.css";
 
 const Navbar = (props) => {
-
 let friendsElement = props.state.friends.map( f => (<FriendsList name = {f.firstName} img = {f.img} url = {f.url} />) );
 
   return (

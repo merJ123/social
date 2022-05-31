@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
 import './App.css';
-import Dialogs from './components/Dialogs/Dialogs';
+import DialogsContainer from './components/Dialogs/DialogsContainer';
 import Header from './components/Header/Header';
 import Music from './components/Music/Music';
 import Navbar from './components/Navbar/Navbar';
@@ -19,12 +19,10 @@ const App = (props) => {
             <Routes>
               <Route path='/profile' 
                      element={<Profile 
-                        state={props.state.profilePage} 
-                        dispatch = {props.dispatch} />} />
-              <Route path='/dialogs/*' 
-                     element={<Dialogs 
-                        state={props.state.dialogsPage} 
-                        dispatch={props.dispatch}/>} />
+                        state={props}  />} />
+              <Route path='/dialogs/' 
+                     element={<DialogsContainer 
+                        state={props} />} />
               <Route path='/news' element={<News />} />
               <Route path='/music' element={<Music />} />
               <Route path='/settings' element={<Settings />} />
